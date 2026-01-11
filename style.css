@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	padding-top: 105px;
+	background-color: #A5C9B2;
+}
+h1
+{
+	text-align: center;
+	font-size: 45px;
+}
+h2
+{
+	text-align: center;
+	font-size: 35px;
+}
+h3
+{
+	text-align: center;
+	font-size: 25px;
+	margin: 20px auto;
+}
+p
+{
+	font-size: 20px;
+}
+
+.top-header {
+    position: fixed;   /* 關鍵！這是「釘選」的指令 */
+    top: 0;            /* 緊貼視窗最上面 */
+    left: 0;           /* 緊貼視窗最左邊 */
+    width: 100%;       /* 寬度佔滿整個螢幕 */
+    background-color:#A5C9B2; /* 淡江紅底色 */
+    color: black;      /* 標題字變白色 */
+    z-index: 1000;     /* 層級設高一點，確保它會浮在所有圖片上面，不會被蓋住 */
+    text-align: center; /* 文字置中 */
+}
+
+.container-1
+{
+	text-align: center;
+    background-color: white;   /* 設定背景為白色 */
+    width: 800px;              /* 設定方框寬度，類似 A4 紙的大小 */
+    margin: 10px auto;         /* 關鍵！上下留 50px 邊距，左右自動置中 */
+    padding: 10px;             /* 內距：讓文字不要貼著框框邊緣，留點呼吸空間 */
+    border-radius: 10px;       
+}
+
+.container-2
+{
+    background-color: white;   /* 設定背景為白色 */
+    width: 800px;              /* 設定方框寬度，類似 A4 紙的大小 */
+    margin: 10px auto;         /* 關鍵！上下留 50px 邊距，左右自動置中 */
+    padding: 10px;             /* 內距：讓文字不要貼著框框邊緣，留點呼吸空間 */
+}
+
+.map 
+{
+    width: 100%;        /* 強制圖片寬度跟白框一樣寬 */
+    height: auto;       /* 高度自動縮放，才不會變形 */
+    border-radius: 5px; /* 幫圖片加一點圓角，比較好看 */
+    margin-bottom: 5px;/* 圖片下面留一點空白，不要貼著文字 */
+}
+
+.container-3 
+{
+    display: flex;           /* 關鍵咒語！開啟橫排模式 */
+    justify-content: space-between; /* 讓兩個框框左右分開 */
+    gap: 50px;               /* 兩個框框中間留 20px 的縫隙 */
+    width: 820px;            /* 寬度要跟上面的大白框一樣 */
+    margin: 10px auto;       /* 上下留距 20px，左右置中 */
+}
+
+/* 裡面的半寬小白框 */
+.half-box 
+{
+	text-align: center;
+    background-color: white;
+    flex: 2.5;                 /* 兩個框框平分寬度 (1:1) */
+    padding: 20px;           /* 內距 */
+    border-radius: 10px;     /* 圓角 */
+}
+
+.signup-btn {
+    /* 把行內元素變成區塊，這樣 padding 才會生效 */
+    display: inline-block;
+    
+    /* 按鈕外觀 */
+    background-color:#006E3A; 
+    color: white;              
+    font-size: 20px;           /* 字體大一點 */
+    font-weight: bold;         /* 粗體 */
+    text-decoration: none;     /* 去掉超連結預設的底線 */
+    
+    /* 按鈕大小與形狀 */
+    padding: 25px 50px;        /* 上下15px，左右40px (讓按鈕胖胖的比較好按) */
+    border-radius: 50px;       /* 圓角設大一點，變成膠囊狀 */
+    
+    /* 位置設定 */
+    margin-top: 20px;          /* 跟上面的東西保持距離 */
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+}
+
+.signup-btn:hover {
+    background-color: #a00e26; /* 顏色變深 */
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* 陰影變深 */
+}
+
+
+
+
+
+	
